@@ -1,0 +1,583 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Outfit:wght@100..900&display=swap");
+/*Big Shoulders Display: h1, h2, links*/
+/*Outfit: Descripción*/
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Big Shoulders", sans-serif, sans-serif;
+}
+
+div.header__container-boton {
+  padding-left: 16px;
+}
+div.header__container-boton a {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-family: "Big Shoulders", sans-serif;
+  letter-spacing: 3.4px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 120px;
+}
+div.header__container-boton a .container-name {
+  background-color: #151515;
+  padding: 23px 35px 22px 32px;
+}
+div.header__container-boton a .container-icon {
+  background-color: #d5966c;
+  padding: 20px;
+}
+div.header__container-boton a:hover .container-name {
+  background-color: #444444;
+}
+div.header__container-boton a:hover .container-icon {
+  background-color: #444444;
+}
+
+div.header-loc__container-boton {
+  width: 270px;
+  position: absolute;
+  top: 0;
+}
+div.header-loc__container-boton a {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  font-family: "Big Shoulders", sans-serif;
+  letter-spacing: 3.4px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+div.header-loc__container-boton a .container-name {
+  background-color: #151515;
+  padding: 23px 35px 22px 32px;
+}
+div.header-loc__container-boton a .container-icon {
+  background-color: #d5966c;
+  padding: 20px;
+}
+div.header-loc__container-boton a:hover .container-name {
+  background-color: #444444;
+}
+div.header-loc__container-boton a:hover .container-icon {
+  background-color: #444444;
+}
+@media (min-width: 768px) {
+  div.header-loc__container-boton {
+    padding-left: 39px;
+  }
+}
+@media (min-width: 1440px) {
+  div.header-loc__container-boton {
+    padding-left: 156px;
+  }
+}
+
+.hero__container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 25px;
+}
+.hero__container-seccion1 img {
+  max-width: 100%;
+}
+.hero__container-seccion1 h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  color: #151515;
+  text-transform: uppercase;
+  padding: 48px 24px 0px 24px;
+  margin-bottom: 21px;
+}
+.hero__container-seccion1 h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: #151515;
+  font-weight: normal;
+  padding-left: 24px;
+  padding-bottom: 47px;
+}
+.hero__container-seccion2 img {
+  max-width: 100%;
+}
+.hero__container-seccion2 h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 45px;
+  color: white;
+  text-transform: uppercase;
+  padding: 48px 24px 21px 24px;
+}
+.hero__container-seccion2 h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  padding-left: 24px;
+  padding-bottom: 47px;
+}
+.hero__container-seccion2 img {
+  padding-bottom: 16px;
+}
+.hero__container-seccion2-info {
+  background-color: #151515;
+}
+@media (min-width: 768px) {
+  .hero__container-seccion1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-bottom: 11px;
+  }
+  .hero__container-seccion1-desc {
+    max-width: 35%;
+    padding-right: 68px;
+  }
+  .hero__container-seccion2 {
+    display: grid;
+    grid-template-columns: 54% 44%;
+    grid-template-rows: 50% 50%;
+    gap: 11px;
+    margin-bottom: 120px;
+  }
+  .hero__container-seccion2 .img1 {
+    grid-row: 1/span 2;
+  }
+  .hero__container-seccion2 .img1 img {
+    height: 100%;
+  }
+  .hero__container-seccion2 .img2 img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .hero__container-seccion2-info h1 {
+    padding: 85px 28px 24px 29px;
+  }
+  .hero__container-seccion2-info h2 {
+    padding: 0px 63px 85px 29px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero__container {
+    padding-left: 165px;
+    padding-right: 164px;
+    margin-bottom: 180px;
+  }
+  .hero__container-seccion1 {
+    margin-bottom: 30px;
+  }
+  .hero__container-seccion1-img img {
+    max-width: 100%;
+    max-height: 400px;
+  }
+  .hero__container-seccion1-desc {
+    padding-right: 125px;
+  }
+  .hero__container-seccion1-desc h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .hero__container-seccion1-desc h2 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 35px;
+  }
+  .hero__container-seccion2 {
+    grid-template-columns: 58% 39%;
+    grid-template-rows: 43% 53%;
+    gap: 30px;
+    max-height: 720px;
+  }
+  .hero__container-seccion2 .img1 img {
+    width: 635px;
+    height: 720px;
+  }
+  .hero__container-seccion2 .img2 img {
+    width: 445px;
+    height: 313px;
+  }
+  .hero__container-seccion2-info h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .hero__container-seccion2-info h2 {
+    font-size: 22px;
+    padding-right: 10px;
+    padding-bottom: 32px;
+  }
+}
+
+.hero-loc__container {
+  padding-top: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 36px;
+  background-color: #151515;
+}
+.hero-loc__container h1 {
+  font-family: "Big Shoulders", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  padding-bottom: 48px;
+}
+.hero-loc__container-add h2 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 32px;
+  color: #d5966c;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.hero-loc__container-add div.direccion,
+.hero-loc__container-add div.desc {
+  padding-bottom: 20px;
+}
+.hero-loc__container-add div.direccion p,
+.hero-loc__container-add div.desc p {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+@media (min-width: 768px) {
+  .hero-loc__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+    padding: 88px 40px 80px 39px;
+  }
+  .hero-loc__container h1 {
+    padding-right: 43px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-loc__container {
+    padding: 104px 165px 128px 165px;
+    gap: 215px;
+  }
+  .hero-loc__container h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .hero-loc__container-add h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+  .hero-loc__container-add div.direccion p,
+  .hero-loc__container-add div.desc p {
+    font-size: 22px;
+  }
+}
+
+.footer__container {
+  height: 85px;
+  background-color: #151515;
+  color: white;
+  padding: 48px 32px 48px 32px;
+}
+.footer__container h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  width: 110px;
+  padding-bottom: 38px;
+}
+.footer__container h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding-bottom: 38px;
+}
+.footer__container-icons {
+  display: flex;
+  gap: 20px;
+}
+.footer__container-icons svg {
+  width: 20px;
+  height: 20px;
+}
+.footer__container-icons svg:hover path {
+  fill: #d5966c;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 40px 56px 39px;
+  }
+  .footer__container h2 {
+    width: 40%;
+  }
+  .footer__container-icons {
+    height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__container {
+    padding: 80px 165px 80px 165px;
+  }
+  .footer__container h1 {
+    font-size: 28px;
+    line-height: 28px;
+    width: 130px;
+  }
+  .footer__container h2 {
+    font-size: 18px;
+  }
+  .footer__container-icons {
+    height: 20px;
+  }
+}
+
+.footer-loc__container {
+  background-color: #d5966c;
+  color: #151515;
+  padding: 48px 32px 48px 32px;
+}
+.footer-loc__container h1 {
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  width: 110px;
+  margin-bottom: 32px;
+}
+.footer-loc__container h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+.footer-loc__container-icons {
+  display: flex;
+  gap: 20px;
+}
+.footer-loc__container-icons svg {
+  width: 20px;
+  height: 20px;
+}
+.footer-loc__container-icons svg path {
+  fill: #151515;
+}
+.footer-loc__container-icons svg:hover path {
+  fill: white;
+}
+@media (min-width: 768px) {
+  .footer-loc__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 40px 56px 39px;
+    height: 85px;
+  }
+  .footer-loc__container h2 {
+    width: 40%;
+  }
+}
+@media (min-width: 1440px) {
+  .footer-loc__container {
+    padding: 80px 165px;
+    height: 84px;
+  }
+  .footer-loc__container h1 {
+    font-size: 34px;
+    line-height: 34ph;
+    width: 155px;
+  }
+  .footer-loc__container h2 {
+    font-size: 18px;
+  }
+}
+
+.header__container {
+  max-width: 1275;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__container-imagen {
+  max-width: 100%;
+  padding-bottom: 32px;
+}
+.header__container h1 {
+  color: #151515;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 55px;
+  padding-left: 16px;
+  padding-right: 85px;
+  padding-bottom: 32px;
+}
+.header__container h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #444444;
+  padding-right: 16px;
+  padding-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    position: relative;
+    height: 700px;
+  }
+  .header__container-imagen {
+    max-width: 437px;
+    height: 700px;
+    padding-bottom: 0px;
+  }
+  .header__container-desc {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+  }
+  .header__container-desc h1 {
+    font-size: 70px;
+    line-height: 70px;
+    padding-right: 50px;
+  }
+  .header__container-boton {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+  }
+  .header__container-boton h2 {
+    padding-left: 0px;
+    padding-bottom: 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 0px;
+    padding-right: 164px;
+    height: 800px;
+    margin-bottom: 180px;
+  }
+  .header__container-imagen {
+    max-width: 540px;
+    height: 800px;
+    padding-left: 450px;
+    background-color: #151515;
+    padding-bottom: 0px;
+  }
+  .header__container-desc {
+    position: absolute;
+    top: 23%;
+    left: 12.5%;
+  }
+  .header__container-desc h1 {
+    font-size: 96px;
+    line-height: 96px;
+    padding: 0;
+    width: 435px;
+    color: white;
+  }
+  .header__container-boton {
+    position: absolute;
+    top: 24%;
+    left: 64%;
+  }
+  .header__container-boton h2 {
+    font-size: 20px;
+    padding-left: 0px;
+    padding-bottom: 64px;
+    width: 320px;
+  }
+}
+
+.header-loc__container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 550px;
+  position: relative;
+}
+.header-loc__container-imagen {
+  max-width: 200%;
+  height: 550px;
+  position: absolute;
+  left: -44%;
+}
+.header-loc__container h1 {
+  color: #151515;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 55px;
+  padding-left: 16px;
+  padding-right: 85px;
+  margin-bottom: 32px;
+}
+.header-loc__container h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #444444;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .header-loc__container {
+    height: 600px;
+  }
+  .header-loc__container-imagen {
+    left: 0%;
+    height: 600px;
+  }
+}
+@media (min-width: 1440px) {
+  .header-loc__container {
+    height: 600px;
+  }
+  .header-loc__container-imagen {
+    height: 600px;
+  }
+}
+
+body {
+  background-color: white;
+  max-width: 1920px;
+  /*@include mixins.breakpoint(tablet) {
+    background-image: url("../img/hero-img-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 125% 0%;
+    background-size: 400px;
+  }
+  @include mixins.breakpoint(tablethorizontal) {
+    background-position: 130% 0%;
+    background-size: 600px;
+  }
+  @include mixins.breakpoint(desktop) {
+    background-position: 109% -20px;
+    background-size: 600px;
+  }*/
+}
+
+html * {
+  font-family: "Big Shoulders", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
