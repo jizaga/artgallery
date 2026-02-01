@@ -1,0 +1,119 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.footer__container {
+  height: 85px;
+  background-color: variables.$titulo;
+  color: variables.$typo-link;
+  padding: 48px 32px 48px 32px;
+  h1 {
+    font-family: variables.$primary-font;
+    font-size: 24px;
+    font-weight: 700;
+    width: 110px;
+    padding-bottom: 38px;
+  }
+  h2 {
+    font-family: variables.$secondary-font;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 38px;
+  }
+  &-icons {
+    display: flex;
+    gap: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+      &:hover {
+        path {
+          fill: variables.$flecha-link;
+        }
+      }
+    }
+  }
+  @include mixins.breakpoint(tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 40px 56px 39px;
+    h2 {
+      width: 40%;
+    }
+    &-icons {
+      height: 20px;
+    }
+  }
+
+  @include mixins.breakpoint(desktopxl) {
+    padding: 80px 165px 80px 165px;
+    h1 {
+      font-size: 28px;
+      line-height: 28px;
+      width: 130px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    &-icons {
+      height: 20px;
+    }
+  }
+}
+
+.footer-loc__container {
+  background-color: variables.$flecha-link;
+  color: variables.$titulo;
+  padding: 48px 32px 48px 32px;
+  h1 {
+    font-family: variables.$primary-font;
+    font-size: 24px;
+    font-weight: 700;
+    width: 110px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-family: variables.$secondary-font;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 32px;
+  }
+  &-icons {
+    display: flex;
+    gap: 20px;
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: variables.$titulo;
+      }
+      &:hover {
+        path {
+          fill: variables.$typo-link;
+        }
+      }
+    }
+  }
+  @include mixins.breakpoint(tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 40px 56px 39px;
+    height: 85px;
+    h2 {
+      width: 40%;
+    }
+  }
+
+  @include mixins.breakpoint(desktopxl) {
+    padding: 80px 165px;
+    height: 84px;
+
+    h1 {
+      font-size: 34px;
+      line-height: 34ph;
+      width: 155px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+  }
+}

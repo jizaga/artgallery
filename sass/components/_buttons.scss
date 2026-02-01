@@ -1,0 +1,76 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+div.header__container-boton {
+  padding-left: 16px;
+
+  a {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    font-family: variables.$primary-font;
+    letter-spacing: 3.4px;
+    color: variables.$typo-link;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 120px;
+    .container-name {
+      background-color: variables.$cuerpo-link;
+      padding: 23px 35px 22px 32px;
+    }
+    .container-icon {
+      background-color: variables.$flecha-link;
+      padding: 20px;
+    }
+    &:hover {
+      .container-name {
+        background-color: variables.$subtitulo;
+      }
+      .container-icon {
+        background-color: variables.$subtitulo;
+      }
+    }
+  }
+}
+
+div.header-loc__container-boton {
+  width: 270px;
+  position: absolute;
+  top: 0;
+  a {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    font-family: variables.$primary-font;
+    letter-spacing: 3.4px;
+    color: variables.$typo-link;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    .container-name {
+      background-color: variables.$cuerpo-link;
+      padding: 23px 35px 22px 32px;
+    }
+    .container-icon {
+      background-color: variables.$flecha-link;
+      padding: 20px;
+    }
+    &:hover {
+      .container-name {
+        background-color: variables.$subtitulo;
+      }
+      .container-icon {
+        background-color: variables.$subtitulo;
+      }
+    }
+  }
+
+  @include mixins.breakpoint(tablet) {
+    padding-left: 39px;
+  }
+
+  @include mixins.breakpoint(desktopxl) {
+    padding-left: 156px;
+  }
+}

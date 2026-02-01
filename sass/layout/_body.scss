@@ -1,0 +1,22 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+body {
+  background-color: variables.$fondo_general;
+  max-width: variables.$max-width-container;
+
+  /*@include mixins.breakpoint(tablet) {
+    background-image: url("../img/hero-img-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 125% 0%;
+    background-size: 400px;
+  }
+  @include mixins.breakpoint(tablethorizontal) {
+    background-position: 130% 0%;
+    background-size: 600px;
+  }
+  @include mixins.breakpoint(desktop) {
+    background-position: 109% -20px;
+    background-size: 600px;
+  }*/
+}
