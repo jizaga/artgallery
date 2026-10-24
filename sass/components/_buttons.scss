@@ -14,7 +14,7 @@ div.header__container-boton {
     text-decoration: none;
     font-size: 20px;
     font-weight: 800;
-    margin-bottom: 120px;
+    /*margin-bottom: 120px;*/
     .container-name {
       background-color: variables.$cuerpo-link;
       padding: 23px 35px 22px 32px;
@@ -70,7 +70,7 @@ div.header-loc__container-boton {
     padding-left: 39px;
   }
 
-  @include mixins.breakpoint(desktopxl) {
-    padding-left: 156px;
+  @include mixins.breakpoint(desktop) {
+    padding-left: 117px;
   }
 }

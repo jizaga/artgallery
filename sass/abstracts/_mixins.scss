@@ -7,20 +7,8 @@
     }
   }
 
-  @if $bp == tablethorizontal {
-    @media (min-width: variables.$bp-tablet-horizontal) {
-      @content;
-    }
-  }
-
   @if $bp == desktop {
     @media (min-width: variables.$bp-desktop) {
-      @content;
-    }
-  }
-
-  @if $bp == desktopxl {
-    @media (min-width: variables.$bp-desktop-xl) {
       @content;
     }
   }

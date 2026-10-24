@@ -2,12 +2,12 @@
 @use "../abstracts/mixins";
 
 .header__container {
-  max-width: 1275;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 120px;
 
   &-imagen {
-    max-width: 100%;
+    width: 100%;
     padding-bottom: 32px;
   }
   h1 {
@@ -36,7 +36,7 @@
     height: 700px;
 
     &-imagen {
-      max-width: 437px;
+      width: 447px;
       height: 700px;
       padding-bottom: 0px;
     }
@@ -61,7 +61,7 @@
     }
   }
 
-  @include mixins.breakpoint(desktopxl) {
+  @include mixins.breakpoint(desktop) {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -72,7 +72,7 @@
     margin-bottom: 180px;
 
     &-imagen {
-      max-width: 540px;
+      width: 540px;
       height: 800px;
       padding-left: 450px;
       background-color: variables.$titulo;
@@ -105,17 +105,16 @@
 }
 
 .header-loc__container {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 550px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 500px;
   position: relative;
 
   &-imagen {
-    max-width: 200%;
-    height: 550px;
+    width: 321%;
+    height: 500px;
     position: absolute;
-    left: -44%;
+    left: -415px;
   }
   h1 {
     color: variables.$titulo;
@@ -139,16 +138,19 @@
   @include mixins.breakpoint(tablet) {
     height: 600px;
     &-imagen {
-      left: 0%;
+      left: -32%;
       height: 600px;
+      width: 164%;
     }
   }
 
-  @include mixins.breakpoint(desktopxl) {
-    height: 600px;
+  @include mixins.breakpoint(desktop) {
+    height: 500px;
 
     &-imagen {
-      height: 600px;
+      height: 100%;
+      width: 100%;
+      left: 0%;
     }
   }
 }

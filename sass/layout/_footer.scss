@@ -2,10 +2,11 @@
 @use "../abstracts/variables";
 
 .footer__container {
-  height: 85px;
   background-color: variables.$titulo;
   color: variables.$typo-link;
-  padding: 48px 32px 48px 32px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
   h1 {
     font-family: variables.$primary-font;
     font-size: 24px;
@@ -17,11 +18,12 @@
     font-family: variables.$secondary-font;
     font-size: 16px;
     font-weight: normal;
-    padding-bottom: 38px;
+    padding-bottom: 25px;
   }
   &-icons {
     display: flex;
     gap: 20px;
+    padding-bottom: 50px;
     svg {
       width: 20px;
       height: 20px;
@@ -44,7 +46,7 @@
     }
   }
 
-  @include mixins.breakpoint(desktopxl) {
+  @include mixins.breakpoint(desktop) {
     padding: 80px 165px 80px 165px;
     h1 {
       font-size: 28px;
@@ -103,7 +105,7 @@
     }
   }
 
-  @include mixins.breakpoint(desktopxl) {
+  @include mixins.breakpoint(desktop) {
     padding: 80px 165px;
     height: 84px;
 
